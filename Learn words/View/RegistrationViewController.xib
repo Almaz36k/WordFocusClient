@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationViewController" customModule="Learn_words" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="bqO-Qa-AfJ" id="HHq-mf-dQd"/>
+                <outlet property="nameTextField" destination="Zdo-2i-grb" id="aLS-65-fuW"/>
+                <outlet property="passwordTextField" destination="TLH-RY-BUq" id="Abl-wJ-hRq"/>
+                <outlet property="registrationResponseLabel" destination="M8Z-2z-jrp" id="JSD-EE-Dok"/>
+                <outlet property="view" destination="iN0-l3-epB" id="B5a-Pb-Vsc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="registrationVC" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bqO-Qa-AfJ">
+                    <rect key="frame" x="25" y="213" width="314" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="dQ2-hi-8UG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" textContentType="email"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TLH-RY-BUq">
+                    <rect key="frame" x="25" y="289" width="314" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="YO1-xU-OGX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" textContentType="new-password"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zdo-2i-grb">
+                    <rect key="frame" x="25" y="130" width="314" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="hTz-ot-k7Z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" textContentType="name"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4Z-vS-ZwN">
+                    <rect key="frame" x="78" y="468" width="210" height="58"/>
+                    <color key="backgroundColor" red="0.34901960780000002" green="0.34901960780000002" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="f4Z-vS-ZwN" secondAttribute="height" multiplier="85:29" constant="40" id="SDs-Bk-f1y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Зарегистрировать">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="registrationButton:" destination="-1" eventType="touchUpInside" id="jz6-0s-tot"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8Z-2z-jrp">
+                    <rect key="frame" x="102" y="367" width="170" height="59"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jHc-qp-lwf">
+                    <rect key="frame" x="-5" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <navigationItem title="Регистрация" id="TCn-yd-gvY"/>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bqO-Qa-AfJ" firstAttribute="leading" secondItem="TLH-RY-BUq" secondAttribute="leading" id="5wv-Yh-Qvq"/>
+                <constraint firstItem="Zdo-2i-grb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="130" id="8JE-TK-04v"/>
+                <constraint firstItem="TLH-RY-BUq" firstAttribute="top" secondItem="bqO-Qa-AfJ" secondAttribute="bottom" constant="42" id="ERl-Ph-l0h"/>
+                <constraint firstItem="Zdo-2i-grb" firstAttribute="trailing" secondItem="bqO-Qa-AfJ" secondAttribute="trailing" id="H58-a8-mH5"/>
+                <constraint firstItem="bqO-Qa-AfJ" firstAttribute="trailing" secondItem="TLH-RY-BUq" secondAttribute="trailing" id="OJB-kH-qlw"/>
+                <constraint firstItem="bqO-Qa-AfJ" firstAttribute="top" secondItem="Zdo-2i-grb" secondAttribute="bottom" constant="49" id="PDn-pW-DuR"/>
+                <constraint firstItem="Zdo-2i-grb" firstAttribute="leading" secondItem="bqO-Qa-AfJ" secondAttribute="leading" id="Y0Q-F6-4H9"/>
+                <constraint firstItem="f4Z-vS-ZwN" firstAttribute="top" secondItem="TLH-RY-BUq" secondAttribute="bottom" constant="145" id="bNt-bt-jhf"/>
+                <constraint firstItem="Zdo-2i-grb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="c66-5O-2Zx"/>
+                <constraint firstItem="TLH-RY-BUq" firstAttribute="centerX" secondItem="f4Z-vS-ZwN" secondAttribute="centerX" constant="-1" id="v1m-yG-Z0I"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Zdo-2i-grb" secondAttribute="trailing" constant="36" id="ycK-g0-Zfk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="112.89355322338831"/>
+        </view>
+    </objects>
+</document>

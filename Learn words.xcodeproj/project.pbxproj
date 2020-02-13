@@ -7,23 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0AA87D23E602C9009B2F60 /* AddWordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0AA87C23E602C9009B2F60 /* AddWordView.xib */; };
+		FA0AA87F23E602F4009B2F60 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0AA87E23E602F4009B2F60 /* LoginViewController.xib */; };
+		FA0AA88123E60304009B2F60 /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0AA88023E60304009B2F60 /* RegistrationViewController.xib */; };
+		FA0AA88323E8929D009B2F60 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AA88223E8929D009B2F60 /* SettingViewController.swift */; };
+		FA0AA88523E892E0009B2F60 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0AA88423E892E0009B2F60 /* SettingViewController.xib */; };
+		FA0AA88723E9F6E5009B2F60 /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AA88623E9F6E5009B2F60 /* Nib.swift */; };
+		FA33187323F47AB200FC763E /* WordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33187223F47AB200FC763E /* WordManager.swift */; };
+		FA4AA85A23DF5D0300ED1DFF /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4AA85923DF5D0300ED1DFF /* Word.swift */; };
+		FA50044823CA80DB00A887A9 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50044723CA80DB00A887A9 /* RegistrationViewController.swift */; };
+		FA50044A23CA83D400A887A9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50044923CA83D400A887A9 /* LoginViewController.swift */; };
+		FA508052238D5A740069207F /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA508051238D5A740069207F /* UITableView.swift */; };
 		FA62DBD42380031A0084FBC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62DBD32380031A0084FBC9 /* AppDelegate.swift */; };
 		FA62DBD62380031A0084FBC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62DBD52380031A0084FBC9 /* SceneDelegate.swift */; };
-		FA62DBD82380031A0084FBC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62DBD72380031A0084FBC9 /* ViewController.swift */; };
+		FA62DBD82380031A0084FBC9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62DBD72380031A0084FBC9 /* MainViewController.swift */; };
 		FA62DBDB2380031A0084FBC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA62DBD92380031A0084FBC9 /* Main.storyboard */; };
 		FA62DBDD2380031D0084FBC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA62DBDC2380031D0084FBC9 /* Assets.xcassets */; };
 		FA62DBE02380031D0084FBC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA62DBDE2380031D0084FBC9 /* LaunchScreen.storyboard */; };
+		FA62DBE8238874D50084FBC9 /* AddWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62DBE7238874D50084FBC9 /* AddWordView.swift */; };
+		FA81380C23F5D33700A3B126 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FA81380B23F5D33700A3B126 /* .gitignore */; };
+		FAD2488C23E5BC42004B3D50 /* WordEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2488B23E5BC42004B3D50 /* WordEndPoint.swift */; };
+		FAD2488E23E5BC5F004B3D50 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2488D23E5BC5F004B3D50 /* NetworkManager.swift */; };
+		FAD2489023E5BC7B004B3D50 /* EndPiontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2488F23E5BC7B004B3D50 /* EndPiontType.swift */; };
+		FAD2489423E5BC9C004B3D50 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2489323E5BC9C004B3D50 /* HTTPMethod.swift */; };
+		FAD2489623E5BCAF004B3D50 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2489523E5BCAF004B3D50 /* HTTPTask.swift */; };
+		FAD2489823E5BCC2004B3D50 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2489723E5BCC2004B3D50 /* NetworkRouter.swift */; };
+		FAD2489B23E5BCDB004B3D50 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2489A23E5BCDB004B3D50 /* Router.swift */; };
+		FAD2489D23E5BCEF004B3D50 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2489C23E5BCEF004B3D50 /* ParameterEncoder.swift */; };
+		FAD2489F23E5BD03004B3D50 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2489E23E5BD03004B3D50 /* URLParameterEncoder.swift */; };
+		FAD248A123E5BD15004B3D50 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD248A023E5BD15004B3D50 /* JSONParameterEncoder.swift */; };
+		FAD248A323E5C478004B3D50 /* ScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD248A223E5C478004B3D50 /* ScreenRouter.swift */; };
+		FAD248A523E5C555004B3D50 /* AuthorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD248A423E5C555004B3D50 /* AuthorizationManager.swift */; };
+		FAD248A723E5EED4004B3D50 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD248A623E5EED4004B3D50 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA0AA87C23E602C9009B2F60 /* AddWordView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddWordView.xib; sourceTree = "<group>"; };
+		FA0AA87E23E602F4009B2F60 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		FA0AA88023E60304009B2F60 /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
+		FA0AA88223E8929D009B2F60 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		FA0AA88423E892E0009B2F60 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		FA0AA88623E9F6E5009B2F60 /* Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nib.swift; sourceTree = "<group>"; };
+		FA33187223F47AB200FC763E /* WordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordManager.swift; sourceTree = "<group>"; };
+		FA4AA85923DF5D0300ED1DFF /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		FA50044723CA80DB00A887A9 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		FA50044923CA83D400A887A9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FA508051238D5A740069207F /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		FA62DBD02380031A0084FBC9 /* Learn words.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learn words.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA62DBD32380031A0084FBC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA62DBD52380031A0084FBC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA62DBD72380031A0084FBC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA62DBD72380031A0084FBC9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FA62DBDA2380031A0084FBC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA62DBDC2380031D0084FBC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA62DBDF2380031D0084FBC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA62DBE12380031D0084FBC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA62DBE7238874D50084FBC9 /* AddWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordView.swift; sourceTree = "<group>"; };
+		FA81380B23F5D33700A3B126 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		FAD2488B23E5BC42004B3D50 /* WordEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEndPoint.swift; sourceTree = "<group>"; };
+		FAD2488D23E5BC5F004B3D50 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FAD2488F23E5BC7B004B3D50 /* EndPiontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPiontType.swift; sourceTree = "<group>"; };
+		FAD2489323E5BC9C004B3D50 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		FAD2489523E5BCAF004B3D50 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		FAD2489723E5BCC2004B3D50 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		FAD2489A23E5BCDB004B3D50 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FAD2489C23E5BCEF004B3D50 /* ParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoder.swift; sourceTree = "<group>"; };
+		FAD2489E23E5BD03004B3D50 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		FAD248A023E5BD15004B3D50 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		FAD248A223E5C478004B3D50 /* ScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRouter.swift; sourceTree = "<group>"; };
+		FAD248A423E5C555004B3D50 /* AuthorizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationManager.swift; sourceTree = "<group>"; };
+		FAD248A623E5EED4004B3D50 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +89,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA4AA85623DF5CC000ED1DFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA4AA85923DF5D0300ED1DFF /* Word.swift */,
+				FA508051238D5A740069207F /* UITableView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA4AA85C23DF5D3000ED1DFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA62DBE7238874D50084FBC9 /* AddWordView.swift */,
+				FA62DBD72380031A0084FBC9 /* MainViewController.swift */,
+				FA50044723CA80DB00A887A9 /* RegistrationViewController.swift */,
+				FA50044923CA83D400A887A9 /* LoginViewController.swift */,
+				FA0AA88223E8929D009B2F60 /* SettingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA4AA85D23DF5D3A00ED1DFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAD248A623E5EED4004B3D50 /* MainViewController.xib */,
+				FA0AA87C23E602C9009B2F60 /* AddWordView.xib */,
+				FA0AA88023E60304009B2F60 /* RegistrationViewController.xib */,
+				FA0AA87E23E602F4009B2F60 /* LoginViewController.xib */,
+				FA0AA88423E892E0009B2F60 /* SettingViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA4AA86023DF671900ED1DFF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FAD2488723E5BB92004B3D50 /* EndPoint */,
+				FAD2488823E5BBDA004B3D50 /* Manager */,
+				FAD2488923E5BBE9004B3D50 /* Service */,
+				FAD2488A23E5BBF6004B3D50 /* Encoding */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		FA62DBC72380031A0084FBC9 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +152,61 @@
 		FA62DBD22380031A0084FBC9 /* Learn words */ = {
 			isa = PBXGroup;
 			children = (
+				FA4AA86023DF671900ED1DFF /* Networking */,
+				FA4AA85623DF5CC000ED1DFF /* Model */,
+				FA4AA85D23DF5D3A00ED1DFF /* View */,
+				FA4AA85C23DF5D3000ED1DFF /* Controller */,
 				FA62DBD32380031A0084FBC9 /* AppDelegate.swift */,
 				FA62DBD52380031A0084FBC9 /* SceneDelegate.swift */,
-				FA62DBD72380031A0084FBC9 /* ViewController.swift */,
 				FA62DBD92380031A0084FBC9 /* Main.storyboard */,
 				FA62DBDC2380031D0084FBC9 /* Assets.xcassets */,
 				FA62DBDE2380031D0084FBC9 /* LaunchScreen.storyboard */,
 				FA62DBE12380031D0084FBC9 /* Info.plist */,
+				FAD248A223E5C478004B3D50 /* ScreenRouter.swift */,
+				FAD248A423E5C555004B3D50 /* AuthorizationManager.swift */,
+				FA33187223F47AB200FC763E /* WordManager.swift */,
+				FA0AA88623E9F6E5009B2F60 /* Nib.swift */,
+				FA81380B23F5D33700A3B126 /* .gitignore */,
 			);
 			path = "Learn words";
+			sourceTree = "<group>";
+		};
+		FAD2488723E5BB92004B3D50 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				FAD2488B23E5BC42004B3D50 /* WordEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		FAD2488823E5BBDA004B3D50 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FAD2488D23E5BC5F004B3D50 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		FAD2488923E5BBE9004B3D50 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FAD2488F23E5BC7B004B3D50 /* EndPiontType.swift */,
+				FAD2489323E5BC9C004B3D50 /* HTTPMethod.swift */,
+				FAD2489523E5BCAF004B3D50 /* HTTPTask.swift */,
+				FAD2489723E5BCC2004B3D50 /* NetworkRouter.swift */,
+				FAD2489A23E5BCDB004B3D50 /* Router.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FAD2488A23E5BBF6004B3D50 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				FAD2489C23E5BCEF004B3D50 /* ParameterEncoder.swift */,
+				FAD2489E23E5BD03004B3D50 /* URLParameterEncoder.swift */,
+				FAD248A023E5BD15004B3D50 /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +268,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA62DBE02380031D0084FBC9 /* LaunchScreen.storyboard in Resources */,
+				FA0AA87D23E602C9009B2F60 /* AddWordView.xib in Resources */,
+				FA0AA87F23E602F4009B2F60 /* LoginViewController.xib in Resources */,
 				FA62DBDD2380031D0084FBC9 /* Assets.xcassets in Resources */,
 				FA62DBDB2380031A0084FBC9 /* Main.storyboard in Resources */,
+				FA0AA88123E60304009B2F60 /* RegistrationViewController.xib in Resources */,
+				FAD248A723E5EED4004B3D50 /* MainViewController.xib in Resources */,
+				FA81380C23F5D33700A3B126 /* .gitignore in Resources */,
+				FA0AA88523E892E0009B2F60 /* SettingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +286,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA62DBD82380031A0084FBC9 /* ViewController.swift in Sources */,
+				FAD2489623E5BCAF004B3D50 /* HTTPTask.swift in Sources */,
+				FAD2489023E5BC7B004B3D50 /* EndPiontType.swift in Sources */,
+				FAD2489823E5BCC2004B3D50 /* NetworkRouter.swift in Sources */,
+				FAD2489D23E5BCEF004B3D50 /* ParameterEncoder.swift in Sources */,
+				FAD2488C23E5BC42004B3D50 /* WordEndPoint.swift in Sources */,
+				FA0AA88323E8929D009B2F60 /* SettingViewController.swift in Sources */,
+				FA50044A23CA83D400A887A9 /* LoginViewController.swift in Sources */,
+				FA4AA85A23DF5D0300ED1DFF /* Word.swift in Sources */,
+				FA50044823CA80DB00A887A9 /* RegistrationViewController.swift in Sources */,
+				FAD2489F23E5BD03004B3D50 /* URLParameterEncoder.swift in Sources */,
+				FAD2488E23E5BC5F004B3D50 /* NetworkManager.swift in Sources */,
+				FAD2489B23E5BCDB004B3D50 /* Router.swift in Sources */,
+				FA62DBD82380031A0084FBC9 /* MainViewController.swift in Sources */,
 				FA62DBD42380031A0084FBC9 /* AppDelegate.swift in Sources */,
+				FAD248A523E5C555004B3D50 /* AuthorizationManager.swift in Sources */,
+				FA0AA88723E9F6E5009B2F60 /* Nib.swift in Sources */,
+				FA508052238D5A740069207F /* UITableView.swift in Sources */,
+				FAD248A323E5C478004B3D50 /* ScreenRouter.swift in Sources */,
+				FAD2489423E5BC9C004B3D50 /* HTTPMethod.swift in Sources */,
+				FA33187323F47AB200FC763E /* WordManager.swift in Sources */,
 				FA62DBD62380031A0084FBC9 /* SceneDelegate.swift in Sources */,
+				FA62DBE8238874D50084FBC9 /* AddWordView.swift in Sources */,
+				FAD248A123E5BD15004B3D50 /* JSONParameterEncoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
