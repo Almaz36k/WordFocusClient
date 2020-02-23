@@ -7,7 +7,7 @@ class WordManager {
     }
     
     private var arrayTranslates = [String]()
-    private var rightIndex = 0
+    var rightIndex = 0
     let token: String = UserDefaults.standard.string(forKey: "token") ?? "no token"
     var traslates: [String] { get { arrayTranslates }}
     
@@ -23,7 +23,7 @@ class WordManager {
                 words = words.shuffled()
                 let rightIndex = Int.random(in: 0..<words.count)
                 self?.rightIndex = rightIndex
-                self?.arrayTranslates = words.map{ $0.translate.first!.translate }
+                self?.arrayTranslates = words.map{ $0.translate!.first!.translate }
                 
                 completion(words[rightIndex])
             }
@@ -40,6 +40,18 @@ class WordManager {
             }
             if let response = response {
                 print(response)
+            }
+        }
+    }
+    
+    public func getResultAnswers(completion: @escaping (_ answers: [Answers])->()){
+        networkManager.getResultAnswers(token: token){ [weak self] result, error in
+            if let error = error {
+                print(error)
+            }
+            if var answers = result {
+                print(answers, 1)
+                completion(answers)
             }
         }
     }

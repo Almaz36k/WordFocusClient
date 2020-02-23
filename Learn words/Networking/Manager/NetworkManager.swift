@@ -86,6 +86,34 @@ class NetworkManager {
           }
       }
     
+    func getResultAnswers(token: String, completion: @escaping (_ response: [Answers]?, _ error: String?) -> ()) {
+        NetworkManager.environment = .words
+        router.request(.getResultAnswers(token: token)) {data, response, error in
+            if error != nil {
+                completion(nil, "Plase check eour network connection")
+            }
+            if let response = response as? HTTPURLResponse {
+                let result = self.handleNetworkResponse(response)
+                switch result {
+                case .success:
+                   guard let responseData = data else {
+                        completion(nil, NetworkResponse.unableToDecode.rawValue)
+                        return
+                    }
+                    do {
+                        let apiResponse = try JSONDecoder().decode([Answers].self, from: responseData)
+                        completion(apiResponse, nil)
+                    } catch {
+                        completion(nil, NetworkResponse.unableToDecode.rawValue)
+                    }
+                case .failure(let networkFailureError):
+                    completion(nil, networkFailureError)
+                }
+            }
+        }
+    }
+            
+    
     func authorization(name: String, password: String, completion: @escaping (_ response: String?, _ error: String?) -> ()) {
         NetworkManager.environment = .auth
         router.request(.authorization(name: name, password: password)) { data, response, error in

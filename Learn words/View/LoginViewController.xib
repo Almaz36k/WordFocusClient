@@ -57,7 +57,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFK-cY-xyw">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFK-cY-xyw">
                     <rect key="frame" x="20" y="535" width="335" height="30"/>
                     <state key="normal" title="Зарегистрироваться"/>
                     <connections>
@@ -78,7 +78,7 @@
                 <constraint firstItem="AXd-rH-NQ2" firstAttribute="top" secondItem="ETC-fG-Hcg" secondAttribute="bottom" constant="40" id="hl0-Jw-SOa"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ETC-fG-Hcg" secondAttribute="trailing" constant="20" id="hlz-Ys-Go1"/>
                 <constraint firstItem="EFK-cY-xyw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="lIq-yg-phm"/>
-                <constraint firstItem="EFK-cY-xyw" firstAttribute="top" secondItem="32b-er-tfa" secondAttribute="bottom" constant="70" id="wZB-Ft-I6N"/>
+                <constraint firstItem="EFK-cY-xyw" firstAttribute="top" secondItem="32b-er-tfa" secondAttribute="bottom" constant="135" id="wZB-Ft-I6N"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="-287.19999999999999" y="-69.715142428785612"/>

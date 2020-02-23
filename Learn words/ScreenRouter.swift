@@ -2,12 +2,15 @@ import UIKit
 
 private enum TabItems: CaseIterable {
     case main
+    case answers
     case login
+    
    
     
     var controller: UIViewController.Type? {
         switch self {
-        case .main:         return MainViewController.self
+        case .main: return MainViewController.self
+        case .answers: return AnswersTableViewController.self
         case .login:
                if AuthorizationManager.authorized() {
                 return SettingViewController.self
@@ -20,6 +23,7 @@ private enum TabItems: CaseIterable {
     var icon: UIImage? {
         switch self {
         case .main: return #imageLiteral(resourceName: "icon-open_book")
+        case .answers: return #imageLiteral(resourceName: "icon-exit")
         case .login:
             if AuthorizationManager.authorized() {
                 return #imageLiteral(resourceName: "icon-settings")
@@ -32,6 +36,7 @@ private enum TabItems: CaseIterable {
     var title: String? {
         switch self {
             case .main: return "Главная"
+            case .answers: return "Прогресс"
             case .login:
                 if AuthorizationManager.authorized() {
                     return "Настройки"
@@ -52,6 +57,7 @@ private enum TabItems: CaseIterable {
     var isEnable: Bool {
         switch self {
         case .main: return true
+        case .answers: return true
         case .login: return true
         }
     }

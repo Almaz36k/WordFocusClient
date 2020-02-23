@@ -15,24 +15,47 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добавить слово" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgL-8K-YC3">
                     <rect key="frame" x="117" y="8" width="129" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Слово" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tnz-My-CFx">
-                    <rect key="frame" x="24" y="49" width="315" height="27"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Перевод" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RZf-jB-zlG">
-                    <rect key="frame" x="24" y="96" width="315" height="27"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UM9-GN-LDK">
-                    <rect key="frame" x="24" y="187" width="126" height="58"/>
-                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="good-answer-png" translatesAutoresizingMaskIntoConstraints="NO" id="58h-Vd-Iee">
+                    <rect key="frame" x="0.0" y="37" width="363" height="53"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="UM9-GN-LDK" secondAttribute="height" multiplier="13:6" id="00c-6N-7fJ"/>
+                        <constraint firstAttribute="height" constant="53" id="yHh-aD-Epd"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="good-answer-png" translatesAutoresizingMaskIntoConstraints="NO" id="YcC-x5-Wj4">
+                    <rect key="frame" x="0.0" y="90" width="363" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="N5s-3R-89r"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Перевод" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RZf-jB-zlG">
+                    <rect key="frame" x="24" y="107.5" width="315" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Слово" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="tnz-My-CFx">
+                    <rect key="frame" x="24" y="48" width="315" height="31"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="butons_get_Word-2" translatesAutoresizingMaskIntoConstraints="NO" id="bxE-2y-ljJ">
+                    <rect key="frame" x="234" y="174" width="105" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="105" id="tsj-Hm-7Ru"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="butons_get_Word-2" translatesAutoresizingMaskIntoConstraints="NO" id="m3f-fp-mB0">
+                    <rect key="frame" x="16" y="176" width="105" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UM9-GN-LDK">
+                    <rect key="frame" x="29" y="183" width="78" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="UM9-GN-LDK" secondAttribute="height" multiplier="39:20" id="B87-OC-D8A"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -42,11 +65,22 @@
                         <action selector="closeButton:" destination="-1" eventType="touchUpInside" id="JuS-Xe-AXT"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pH6-Km-e6Z">
-                    <rect key="frame" x="213" y="187" width="126" height="58"/>
-                    <color key="backgroundColor" red="0.34901960780000002" green="0.34901960780000002" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9v-O8-YvC">
+                    <rect key="frame" x="-166" y="67" width="78" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Добавить" image="butons_get_Word-2">
+                        <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </state>
+                    <connections>
+                        <action selector="addWordButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Cxj-d5-zhc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pH6-Km-e6Z">
+                    <rect key="frame" x="248" y="183" width="77" height="39.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="pH6-Km-e6Z" secondAttribute="height" multiplier="13:6" id="Ibv-ba-IhH"/>
+                        <constraint firstAttribute="width" secondItem="pH6-Km-e6Z" secondAttribute="height" multiplier="39:20" id="C0u-fj-5Qa"/>
                     </constraints>
                     <state key="normal" title="Добавить">
                         <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -56,22 +90,37 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="bxE-2y-ljJ" firstAttribute="trailing" secondItem="RZf-jB-zlG" secondAttribute="trailing" id="0AS-tO-xRM"/>
                 <constraint firstItem="RZf-jB-zlG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="3IU-KZ-u1a"/>
+                <constraint firstItem="YcC-x5-Wj4" firstAttribute="centerY" secondItem="RZf-jB-zlG" secondAttribute="centerY" id="3xO-s9-AQW"/>
+                <constraint firstItem="58h-Vd-Iee" firstAttribute="top" secondItem="XgL-8K-YC3" secondAttribute="bottom" constant="8" id="59G-xI-QI7"/>
+                <constraint firstItem="58h-Vd-Iee" firstAttribute="leading" secondItem="YcC-x5-Wj4" secondAttribute="leading" id="5Cm-BB-SUe"/>
                 <constraint firstAttribute="trailing" secondItem="RZf-jB-zlG" secondAttribute="trailing" constant="24" id="5RY-cL-vs5"/>
-                <constraint firstItem="pH6-Km-e6Z" firstAttribute="trailing" secondItem="RZf-jB-zlG" secondAttribute="trailing" id="9Zh-yh-mE6"/>
-                <constraint firstItem="UM9-GN-LDK" firstAttribute="top" secondItem="RZf-jB-zlG" secondAttribute="bottom" constant="64" id="OqJ-BA-hVf"/>
-                <constraint firstItem="UM9-GN-LDK" firstAttribute="width" secondItem="RZf-jB-zlG" secondAttribute="width" multiplier="0.4" id="Ozw-wE-XN8"/>
+                <constraint firstItem="58h-Vd-Iee" firstAttribute="centerY" secondItem="tnz-My-CFx" secondAttribute="centerY" id="8DJ-4W-kPB"/>
+                <constraint firstItem="pH6-Km-e6Z" firstAttribute="top" secondItem="YcC-x5-Wj4" secondAttribute="bottom" constant="40" id="8GS-ZG-8X3"/>
+                <constraint firstItem="bxE-2y-ljJ" firstAttribute="top" secondItem="YcC-x5-Wj4" secondAttribute="bottom" constant="31" id="9TG-An-wAA"/>
+                <constraint firstItem="YcC-x5-Wj4" firstAttribute="centerX" secondItem="RZf-jB-zlG" secondAttribute="centerX" id="DvA-7e-cqH"/>
+                <constraint firstItem="pH6-Km-e6Z" firstAttribute="width" secondItem="YcC-x5-Wj4" secondAttribute="width" multiplier="0.212121" id="HQp-Gc-lgu"/>
+                <constraint firstItem="58h-Vd-Iee" firstAttribute="trailing" secondItem="YcC-x5-Wj4" secondAttribute="trailing" id="JPI-uO-5Da"/>
+                <constraint firstItem="UM9-GN-LDK" firstAttribute="top" secondItem="YcC-x5-Wj4" secondAttribute="bottom" constant="40" id="K7T-s9-5ym"/>
+                <constraint firstItem="UM9-GN-LDK" firstAttribute="width" secondItem="YcC-x5-Wj4" secondAttribute="width" multiplier="0.214876" id="KSg-5e-9EA"/>
+                <constraint firstItem="YcC-x5-Wj4" firstAttribute="leading" secondItem="UM9-GN-LDK" secondAttribute="trailing" constant="-107" id="PYD-nN-gqc"/>
                 <constraint firstItem="XgL-8K-YC3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="SXY-s5-XZ4"/>
-                <constraint firstItem="pH6-Km-e6Z" firstAttribute="width" secondItem="RZf-jB-zlG" secondAttribute="width" multiplier="0.4" id="WCr-4t-dOK"/>
-                <constraint firstItem="tnz-My-CFx" firstAttribute="top" secondItem="XgL-8K-YC3" secondAttribute="bottom" constant="20" id="Wkh-QC-ZG3"/>
-                <constraint firstItem="pH6-Km-e6Z" firstAttribute="top" secondItem="RZf-jB-zlG" secondAttribute="bottom" constant="64" id="XT8-yR-jg3"/>
+                <constraint firstAttribute="bottom" secondItem="bxE-2y-ljJ" secondAttribute="bottom" constant="23" id="WFX-Dv-VaP"/>
+                <constraint firstItem="tnz-My-CFx" firstAttribute="top" secondItem="XgL-8K-YC3" secondAttribute="bottom" constant="19" id="Wkh-QC-ZG3"/>
+                <constraint firstItem="YcC-x5-Wj4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WoW-Ei-wFf"/>
+                <constraint firstItem="pH6-Km-e6Z" firstAttribute="leading" secondItem="YcC-x5-Wj4" secondAttribute="trailing" constant="-115" id="aR0-Az-9ru"/>
+                <constraint firstItem="pH6-Km-e6Z" firstAttribute="top" secondItem="UM9-GN-LDK" secondAttribute="top" id="cXp-ki-kGw"/>
+                <constraint firstAttribute="trailing" secondItem="pH6-Km-e6Z" secondAttribute="trailing" constant="38" id="hVg-2T-yTm"/>
                 <constraint firstItem="tnz-My-CFx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="hf4-Qz-UZN"/>
-                <constraint firstItem="RZf-jB-zlG" firstAttribute="top" secondItem="tnz-My-CFx" secondAttribute="bottom" constant="20" id="lld-nR-wCh"/>
-                <constraint firstItem="UM9-GN-LDK" firstAttribute="leading" secondItem="RZf-jB-zlG" secondAttribute="leading" id="pgB-kJ-Wkc"/>
+                <constraint firstItem="RZf-jB-zlG" firstAttribute="top" secondItem="tnz-My-CFx" secondAttribute="bottom" constant="28.5" id="lld-nR-wCh"/>
+                <constraint firstItem="pH6-Km-e6Z" firstAttribute="centerX" secondItem="bxE-2y-ljJ" secondAttribute="centerX" id="mZ2-hv-Zhk"/>
+                <constraint firstItem="YcC-x5-Wj4" firstAttribute="top" secondItem="58h-Vd-Iee" secondAttribute="bottom" id="o2g-pT-dF1"/>
+                <constraint firstItem="pH6-Km-e6Z" firstAttribute="firstBaseline" secondItem="UM9-GN-LDK" secondAttribute="baseline" id="o9s-yH-Ljv"/>
                 <constraint firstItem="XgL-8K-YC3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uzO-q7-FLt"/>
-                <constraint firstItem="UM9-GN-LDK" firstAttribute="top" secondItem="pH6-Km-e6Z" secondAttribute="top" id="vhC-SC-UBd"/>
+                <constraint firstItem="58h-Vd-Iee" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="37" id="yQD-cl-s5d"/>
                 <constraint firstAttribute="trailing" secondItem="tnz-My-CFx" secondAttribute="trailing" constant="24" id="zMI-C4-rpE"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -82,4 +131,8 @@
             <point key="canvasLocation" x="149.59999999999999" y="-531.18440779610194"/>
         </view>
     </objects>
+    <resources>
+        <image name="butons_get_Word-2" width="600" height="270"/>
+        <image name="good-answer-png" width="1030" height="150"/>
+    </resources>
 </document>

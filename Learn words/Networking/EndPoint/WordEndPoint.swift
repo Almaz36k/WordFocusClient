@@ -8,6 +8,7 @@ enum NetworkEnviroment {
 public enum WordsApi {
     case addWord(token: String, word: String, translate:String)
     case getRandomWords(token: String, myWords: String)
+    case getResultAnswers(token: String)
     case authorization(name: String, password: String)
     case registr(name: String, email: String, password: String)
 }
@@ -28,10 +29,11 @@ extension WordsApi: EndPointType {
     
     var path: String {
         switch self {
-        case .addWord:        return "add-word"
-        case .getRandomWords: return "get-random-words"
-        case .authorization:  return "login"
-        case .registr:        return "registration"
+        case .addWord:          return "add-word"
+        case .getRandomWords:   return "get-random-words"
+        case .getResultAnswers: return "get-results-answers"
+        case .authorization:    return "login"
+        case .registr:          return "registration"
         }
     }
     
@@ -47,6 +49,10 @@ extension WordsApi: EndPointType {
        
         case .addWord(token: let token, word: let word, translate: let translate):
             let parameters = ["token": token, "word": word, "translate": translate]
+            return .requestParameters(bodyParameters: parameters, urlParameters: nil)
+            
+        case .getResultAnswers(token: let token):
+            let parameters = ["token": token]
             return .requestParameters(bodyParameters: parameters, urlParameters: nil)
             
         case .authorization(name: let name, password: let password):
