@@ -10,6 +10,8 @@ import UIKit
 import AVFoundation
 
 class SoundManager: NSObject {
+ 
+    static let shared = SoundManager()
     
     enum SoundType {
         case goodAnswer

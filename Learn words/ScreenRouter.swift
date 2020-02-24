@@ -10,7 +10,7 @@ private enum TabItems: CaseIterable {
     var controller: UIViewController.Type? {
         switch self {
         case .main: return MainViewController.self
-        case .answers: return AnswersTableViewController.self
+        case .answers: return AnswersCollectionViewController.self
         case .login:
                if AuthorizationManager.authorized() {
                 return SettingViewController.self
@@ -23,7 +23,7 @@ private enum TabItems: CaseIterable {
     var icon: UIImage? {
         switch self {
         case .main: return #imageLiteral(resourceName: "icon-open_book")
-        case .answers: return #imageLiteral(resourceName: "icon-exit")
+        case .answers: return #imageLiteral(resourceName: "icon-answers")
         case .login:
             if AuthorizationManager.authorized() {
                 return #imageLiteral(resourceName: "icon-settings")
@@ -36,7 +36,7 @@ private enum TabItems: CaseIterable {
     var title: String? {
         switch self {
             case .main: return "Главная"
-            case .answers: return "Прогресс"
+            case .answers: return "Результаты"
             case .login:
                 if AuthorizationManager.authorized() {
                     return "Настройки"
@@ -67,6 +67,7 @@ class ScreenRouter: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.delegate = self
         self.view.backgroundColor = UIColor.white
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
         tap.cancelsTouchesInView = false
@@ -95,5 +96,15 @@ class ScreenRouter: UITabBarController {
     
     public func refreshTabBar(){
         self.setViewControllers(self.createTabControllers(), animated: true)
+    }
+}
+
+extension ScreenRouter: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        guard let _ = viewController.children.first as? MainViewController else {
+            SoundManager.shared.stop()
+            return
+        }
+        SoundManager.shared.playNewPunter()
     }
 }

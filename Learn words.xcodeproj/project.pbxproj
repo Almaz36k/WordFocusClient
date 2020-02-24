@@ -14,13 +14,13 @@
 		FA0AA88523E892E0009B2F60 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0AA88423E892E0009B2F60 /* SettingViewController.xib */; };
 		FA0AA88723E9F6E5009B2F60 /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AA88623E9F6E5009B2F60 /* Nib.swift */; };
 		FA1C42C923FDAE480058BB26 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C42C823FDAE480058BB26 /* SoundManager.swift */; };
-		FA2B959723FC74BF007B3210 /* HandlingAnswers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B959623FC74BF007B3210 /* HandlingAnswers.swift */; };
 		FA33187323F47AB200FC763E /* WordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33187223F47AB200FC763E /* WordManager.swift */; };
 		FA4AA85A23DF5D0300ED1DFF /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4AA85923DF5D0300ED1DFF /* Word.swift */; };
 		FA50044823CA80DB00A887A9 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50044723CA80DB00A887A9 /* RegistrationViewController.swift */; };
 		FA50044A23CA83D400A887A9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50044923CA83D400A887A9 /* LoginViewController.swift */; };
 		FA508052238D5A740069207F /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA508051238D5A740069207F /* UITableView.swift */; };
 		FA55CDC22402A6DD002B5927 /* AnswersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA55CDC12402A6DD002B5927 /* AnswersCollectionViewCell.xib */; };
+		FA55CDCB2402C08E002B5927 /* AnswersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55CDCA2402C08E002B5927 /* AnswersCollectionViewCell.swift */; };
 		FA62DBD42380031A0084FBC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62DBD32380031A0084FBC9 /* AppDelegate.swift */; };
 		FA62DBD62380031A0084FBC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62DBD52380031A0084FBC9 /* SceneDelegate.swift */; };
 		FA62DBD82380031A0084FBC9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62DBD72380031A0084FBC9 /* MainViewController.swift */; };
@@ -28,8 +28,8 @@
 		FA62DBDD2380031D0084FBC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA62DBDC2380031D0084FBC9 /* Assets.xcassets */; };
 		FA62DBE02380031D0084FBC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA62DBDE2380031D0084FBC9 /* LaunchScreen.storyboard */; };
 		FA62DBE8238874D50084FBC9 /* AddWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62DBE7238874D50084FBC9 /* AddWordView.swift */; };
-		FA6A8FBF2401349A00653FF3 /* AnsweersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A8FBE2401349A00653FF3 /* AnsweersCollectionViewController.swift */; };
-		FA6A8FC12401355300653FF3 /* AnsweersCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8FC02401355300653FF3 /* AnsweersCollectionViewController.xib */; };
+		FA6A8FBF2401349A00653FF3 /* AnswersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A8FBE2401349A00653FF3 /* AnswersCollectionViewController.swift */; };
+		FA6A8FC12401355300653FF3 /* AnswersCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8FC02401355300653FF3 /* AnswersCollectionViewController.xib */; };
 		FA81380C23F5D33700A3B126 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FA81380B23F5D33700A3B126 /* .gitignore */; };
 		FA81381223F5DC2200A3B126 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA81381123F5DC2200A3B126 /* CollectionViewCell.xib */; };
 		FA84162B23F81C9200830984 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84162A23F81C9200830984 /* CollectionViewCell.swift */; };
@@ -56,13 +56,13 @@
 		FA0AA88423E892E0009B2F60 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		FA0AA88623E9F6E5009B2F60 /* Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nib.swift; sourceTree = "<group>"; };
 		FA1C42C823FDAE480058BB26 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
-		FA2B959623FC74BF007B3210 /* HandlingAnswers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlingAnswers.swift; sourceTree = "<group>"; };
 		FA33187223F47AB200FC763E /* WordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordManager.swift; sourceTree = "<group>"; };
 		FA4AA85923DF5D0300ED1DFF /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		FA50044723CA80DB00A887A9 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		FA50044923CA83D400A887A9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FA508051238D5A740069207F /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		FA55CDC12402A6DD002B5927 /* AnswersCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnswersCollectionViewCell.xib; sourceTree = "<group>"; };
+		FA55CDCA2402C08E002B5927 /* AnswersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA62DBD02380031A0084FBC9 /* Learn words.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learn words.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA62DBD32380031A0084FBC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA62DBD52380031A0084FBC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,8 +72,8 @@
 		FA62DBDF2380031D0084FBC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA62DBE12380031D0084FBC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA62DBE7238874D50084FBC9 /* AddWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordView.swift; sourceTree = "<group>"; };
-		FA6A8FBE2401349A00653FF3 /* AnsweersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnsweersCollectionViewController.swift; sourceTree = "<group>"; };
-		FA6A8FC02401355300653FF3 /* AnsweersCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnsweersCollectionViewController.xib; sourceTree = "<group>"; };
+		FA6A8FBE2401349A00653FF3 /* AnswersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersCollectionViewController.swift; sourceTree = "<group>"; };
+		FA6A8FC02401355300653FF3 /* AnswersCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnswersCollectionViewController.xib; sourceTree = "<group>"; };
 		FA81380B23F5D33700A3B126 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		FA81381123F5DC2200A3B126 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		FA84162A23F81C9200830984 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -112,35 +112,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		FA4AA85C23DF5D3000ED1DFF /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				FA62DBE7238874D50084FBC9 /* AddWordView.swift */,
-				FA62DBD72380031A0084FBC9 /* MainViewController.swift */,
-				FA50044723CA80DB00A887A9 /* RegistrationViewController.swift */,
-				FA50044923CA83D400A887A9 /* LoginViewController.swift */,
-				FA0AA88223E8929D009B2F60 /* SettingViewController.swift */,
-				FA84162A23F81C9200830984 /* CollectionViewCell.swift */,
-				FA6A8FBE2401349A00653FF3 /* AnsweersCollectionViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		FA4AA85D23DF5D3A00ED1DFF /* View */ = {
-			isa = PBXGroup;
-			children = (
-				FA0AA87C23E602C9009B2F60 /* AddWordView.xib */,
-				FAD248A623E5EED4004B3D50 /* MainViewController.xib */,
-				FA0AA88023E60304009B2F60 /* RegistrationViewController.xib */,
-				FA0AA87E23E602F4009B2F60 /* LoginViewController.xib */,
-				FA0AA88423E892E0009B2F60 /* SettingViewController.xib */,
-				FA81381123F5DC2200A3B126 /* CollectionViewCell.xib */,
-				FA6A8FC02401355300653FF3 /* AnsweersCollectionViewController.xib */,
-				FA55CDC12402A6DD002B5927 /* AnswersCollectionViewCell.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		FA4AA86023DF671900ED1DFF /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +121,75 @@
 				FAD2488A23E5BBF6004B3D50 /* Encoding */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		FA55CDC32402BE6B002B5927 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FA62DBD72380031A0084FBC9 /* MainViewController.swift */,
+				FAD248A623E5EED4004B3D50 /* MainViewController.xib */,
+				FA62DBE7238874D50084FBC9 /* AddWordView.swift */,
+				FA0AA87C23E602C9009B2F60 /* AddWordView.xib */,
+				FA84162A23F81C9200830984 /* CollectionViewCell.swift */,
+				FA81381123F5DC2200A3B126 /* CollectionViewCell.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FA55CDC42402BEB9002B5927 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				FA0AA88223E8929D009B2F60 /* SettingViewController.swift */,
+				FA0AA88423E892E0009B2F60 /* SettingViewController.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		FA55CDC52402BEE8002B5927 /* Answers */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A8FBE2401349A00653FF3 /* AnswersCollectionViewController.swift */,
+				FA6A8FC02401355300653FF3 /* AnswersCollectionViewController.xib */,
+				FA55CDCA2402C08E002B5927 /* AnswersCollectionViewCell.swift */,
+				FA55CDC12402A6DD002B5927 /* AnswersCollectionViewCell.xib */,
+			);
+			path = Answers;
+			sourceTree = "<group>";
+		};
+		FA55CDC62402BF30002B5927 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				FA50044723CA80DB00A887A9 /* RegistrationViewController.swift */,
+				FA0AA88023E60304009B2F60 /* RegistrationViewController.xib */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		FA55CDC72402BF42002B5927 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FA50044923CA83D400A887A9 /* LoginViewController.swift */,
+				FA0AA87E23E602F4009B2F60 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FA55CDC82402BF71002B5927 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				FA0AA88623E9F6E5009B2F60 /* Nib.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		FA55CDC92402C01C002B5927 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FA33187223F47AB200FC763E /* WordManager.swift */,
+				FA1C42C823FDAE480058BB26 /* SoundManager.swift */,
+				FAD248A423E5C555004B3D50 /* AuthorizationManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		FA62DBC72380031A0084FBC9 = {
@@ -171,22 +211,22 @@
 		FA62DBD22380031A0084FBC9 /* Learn words */ = {
 			isa = PBXGroup;
 			children = (
+				FA55CDC72402BF42002B5927 /* Login */,
+				FA55CDC62402BF30002B5927 /* Registration */,
+				FA55CDC42402BEB9002B5927 /* Setting */,
+				FA55CDC32402BE6B002B5927 /* Main */,
+				FA55CDC52402BEE8002B5927 /* Answers */,
 				FA4AA86023DF671900ED1DFF /* Networking */,
 				FA4AA85623DF5CC000ED1DFF /* Model */,
-				FA4AA85D23DF5D3A00ED1DFF /* View */,
-				FA4AA85C23DF5D3000ED1DFF /* Controller */,
+				FA55CDC82402BF71002B5927 /* helper */,
+				FA55CDC92402C01C002B5927 /* Managers */,
 				FA62DBD32380031A0084FBC9 /* AppDelegate.swift */,
 				FA62DBD52380031A0084FBC9 /* SceneDelegate.swift */,
-				FA62DBD92380031A0084FBC9 /* Main.storyboard */,
+				FAD248A223E5C478004B3D50 /* ScreenRouter.swift */,
 				FA62DBDC2380031D0084FBC9 /* Assets.xcassets */,
+				FA62DBD92380031A0084FBC9 /* Main.storyboard */,
 				FA62DBDE2380031D0084FBC9 /* LaunchScreen.storyboard */,
 				FA62DBE12380031D0084FBC9 /* Info.plist */,
-				FA1C42C823FDAE480058BB26 /* SoundManager.swift */,
-				FAD248A223E5C478004B3D50 /* ScreenRouter.swift */,
-				FAD248A423E5C555004B3D50 /* AuthorizationManager.swift */,
-				FA33187223F47AB200FC763E /* WordManager.swift */,
-				FA2B959623FC74BF007B3210 /* HandlingAnswers.swift */,
-				FA0AA88623E9F6E5009B2F60 /* Nib.swift */,
 				FA81380B23F5D33700A3B126 /* .gitignore */,
 			);
 			path = "Learn words";
@@ -295,7 +335,7 @@
 				FA62DBDD2380031D0084FBC9 /* Assets.xcassets in Resources */,
 				FA55CDC22402A6DD002B5927 /* AnswersCollectionViewCell.xib in Resources */,
 				FA62DBDB2380031A0084FBC9 /* Main.storyboard in Resources */,
-				FA6A8FC12401355300653FF3 /* AnsweersCollectionViewController.xib in Resources */,
+				FA6A8FC12401355300653FF3 /* AnswersCollectionViewController.xib in Resources */,
 				FA0AA88123E60304009B2F60 /* RegistrationViewController.xib in Resources */,
 				FAD248A723E5EED4004B3D50 /* MainViewController.xib in Resources */,
 				FA81380C23F5D33700A3B126 /* .gitignore in Resources */,
@@ -311,7 +351,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD2489623E5BCAF004B3D50 /* HTTPTask.swift in Sources */,
-				FA2B959723FC74BF007B3210 /* HandlingAnswers.swift in Sources */,
 				FAD2489023E5BC7B004B3D50 /* EndPiontType.swift in Sources */,
 				FAD2489823E5BCC2004B3D50 /* NetworkRouter.swift in Sources */,
 				FAD2489D23E5BCEF004B3D50 /* ParameterEncoder.swift in Sources */,
@@ -327,13 +366,14 @@
 				FA62DBD82380031A0084FBC9 /* MainViewController.swift in Sources */,
 				FA62DBD42380031A0084FBC9 /* AppDelegate.swift in Sources */,
 				FAD248A523E5C555004B3D50 /* AuthorizationManager.swift in Sources */,
+				FA55CDCB2402C08E002B5927 /* AnswersCollectionViewCell.swift in Sources */,
 				FA1C42C923FDAE480058BB26 /* SoundManager.swift in Sources */,
 				FA0AA88723E9F6E5009B2F60 /* Nib.swift in Sources */,
 				FA508052238D5A740069207F /* UITableView.swift in Sources */,
 				FAD248A323E5C478004B3D50 /* ScreenRouter.swift in Sources */,
 				FAD2489423E5BC9C004B3D50 /* HTTPMethod.swift in Sources */,
 				FA33187323F47AB200FC763E /* WordManager.swift in Sources */,
-				FA6A8FBF2401349A00653FF3 /* AnsweersCollectionViewController.swift in Sources */,
+				FA6A8FBF2401349A00653FF3 /* AnswersCollectionViewController.swift in Sources */,
 				FA62DBD62380031A0084FBC9 /* SceneDelegate.swift in Sources */,
 				FA62DBE8238874D50084FBC9 /* AddWordView.swift in Sources */,
 				FAD248A123E5BD15004B3D50 /* JSONParameterEncoder.swift in Sources */,

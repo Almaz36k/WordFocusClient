@@ -6,7 +6,7 @@ protocol AddWordViewDelegate {
 
 class AddWordView: UIView {
     
-    let wordManager = { WordManager(network: NetworkManager.shared) }()
+    let wordManager = { WordManager(manager: NetworkManager.shared) }()
     var delegate: AddWordViewDelegate?
     let token: String = UserDefaults.standard.string(forKey: "token") ?? ""
     
@@ -20,7 +20,6 @@ class AddWordView: UIView {
     }
             
     @IBAction func closeAlertButton(_ sender: Any) {
-//        self.removeFromSuperview()
         delegate?.closeAlertButton()
         
     }

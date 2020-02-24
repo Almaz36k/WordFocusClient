@@ -2,8 +2,8 @@ import Foundation
 
 class WordManager {
     let networkManager: NetworkManager
-    init(network: NetworkManager) {
-        networkManager = network
+    init(manager: NetworkManager) {
+        networkManager = manager
     }
     
     private var arrayTranslates = [String]()
@@ -50,7 +50,6 @@ class WordManager {
                 print(error)
             }
             if var answers = result {
-                print(answers, 1)
                 completion(answers)
             }
         }

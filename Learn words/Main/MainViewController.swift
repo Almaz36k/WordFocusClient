@@ -7,8 +7,8 @@ class MainViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var startButton: UIButton!
     
-    let soundManager = SoundManager()
-    let wordManager = { WordManager(network: NetworkManager.shared) }()
+    let soundManager =  SoundManager.shared
+    let wordManager = { WordManager(manager: NetworkManager.shared) }()
     let collectionViewCellId = "CollectionViewCell"
  
     private lazy var addWordView: AddWordView = {
@@ -22,8 +22,6 @@ class MainViewController: UIViewController {
         let view = UIVisualEffectView(effect: blurEfect)
         return view
     }()
-    
-    let cellReuseIdentifier = "cell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +38,6 @@ class MainViewController: UIViewController {
             target: self,
             action: #selector(openAddWordViewAlertButton)
         )
-        
         soundManager.playNewPunter()
     }
     
@@ -70,18 +67,6 @@ class MainViewController: UIViewController {
 
         }
     }
-
-//    @IBAction func getWordButton(_ sender: UIButton) {
-//        self.wordManager.getRandomWords() { [weak self] guessedWord in
-//            DispatchQueue.main.async {
-//                self?.wordLabel.text = guessedWord.word
-//                self?.collectionView.isUserInteractionEnabled = true
-//                self?.collectionView.reloadData()
-//                self?.soundManager.playClock()
-//            }
-//
-//        }
-//    }
     
     public func setupVisualEfectView(){
         view.addSubview(visualEfectView)
@@ -177,38 +162,6 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 self.getWords()
             })
         })
-      
-//        if (self.wordManager.isRightWord(index: indexPath.row)){
-//            cell.ImageView.image = answerImage.goodAnswer.image
-//            //update answers api
-//        }
+//      update answers api
     }
 }
-
-//// MARK: UITableViewDelegate, UITableViewDataSource
-//extension MainViewController: UITableViewDelegate, UITableViewDataSource {
-//
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return self.wordManager.traslates.count
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell:UITableViewCell = self.OptionsTable.dequeueReusableCell(withIdentifier: cellReuseIdentifier)!
-//        cell.textLabel?.text = wordManager.traslates[indexPath.row]
-//        cell.textLabel?.adjustsFontSizeToFitWidth = true
-//        cell.backgroundColor = UIColor(red:0.40, green:0.48, blue:0.56, alpha:1.0)
-//        return cell
-//    }
-//
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if wordManager.isRightWord(index: indexPath.row) {
-//            print("good")
-//            tableView.cellForRow(at: indexPath)?.contentView.backgroundColor = .green
-//        } else {
-//            print("bad")
-//            tableView.cellForRow(at: indexPath)?.contentView.backgroundColor = .red
-//        }
-//        translateLabel.isHidden = false
-//        OptionsTable.allowsSelection = false
-//    }
-//}
